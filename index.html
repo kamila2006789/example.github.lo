@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	
+	<title>Kamila's Porotfolio</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+		
+		}
+		.nav{
+			/*position: relative;*/
+			width:100%;
+			height: 100vh;
+			background: #EDEBE8;
+		}
+		nav .logo{
+			font-size: 32px;
+			font-weight: bold;
+			text-align: right;
+			/*float: left;*/
+			color: black;
+		
+		}
+		
+		nav{
+			display: flex;
+			width: 100%;
+			height: 90px;
+			background-color:#6AA9A2;
+			margin: auto;
+			padding: 20px 0px;
+			align-items: center;
+			justify-content: space-between;
+		
+		}
+		nav ul li{
+			display: inline-block;
+			list-style: none;
+			margin: 30px 10px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: black;
+			font-size: 15px;
+
+		}
+		nav ul li a:hover{
+			color:  #E3C582;
+		}
+		.about{
+			width: 100%;
+			padding: 100px 0px;
+			background-color: #EDEBE8;
+		}
+		.about img{
+			height: 50%;
+			width: 430px;
+		}
+		.abouttext{
+			width: 550px;
+
+		}
+		.main{
+			width: 1130px;
+			max-width: 95%;
+			margin:  0 auto;
+			display:  flex;
+			align-items: center;
+			justify-content: space-around;
+
+		}
+		.oo{
+			font-size: 40px;
+			color: #E3C5B2;
+
+		}
+		p{
+			font-size: 23px;
+		}
+		button{
+			background-color:#ADC1C5;
+			color: black;
+			text-decoration: none;
+			border: 2px solid transparent;
+			font-weight: bold;
+			padding: 13px 30px;
+			border-radius: 30px;
+			transition-property: .4s;
+		}
+		.worksimple2{
+			max-width: 1200px;
+			margin: auto;
+			
+		}
+		.gallery{
+			margin: 5px;
+			border: 1px sold #ccc;
+			float: left;
+			width: 390px;
+			text-align: center;
+		}
+		.gallery img{
+			width: 70%;
+			height:auto;
+	    }
+		.desc{
+			padding: 15px;
+			text-align: center;
+			display: flex;
+		}
+		.h1{
+			text-align: center;
+			font-size: 50px;
+			color: #EDEBE8 ;
+		}
+		.all{
+			background-color: #ADC1C5;
+			width: 100%;
+			height: 90%;
+			/*padding: 200px 0;*/
+
+		}
+		.service{
+			background: #E3C8B2;
+			width: 100%;
+			height: 80%;
+			padding: 10px 0px;
+		}
+		.title .hh{
+			color: #EDEBE8;
+			font-size: 55px;
+			width: 1130px;
+			margin: 30px auto;
+			text-align:  center;
+		}
+		.box{
+			display: flex;
+		    justify-content: center;
+			align-items: center;
+			min-height: 400px;
+
+		}
+		.card{
+			height: 300px;
+			width: 300px;
+			padding: 2px 30px;
+			background: white;
+			border-radius: 20px;
+			margin: 20px;
+			position:  relative;
+			overflow: hidden;
+			text-align: center;
+
+
+		}
+		.card i{
+			font-size: 50px;
+			display: block;
+			text-align: center;
+			margin: 25px 0px;
+			color: black;
+		}
+		h5{
+			color: black ;
+			font-size: 23px;
+		}
+		p{
+			font-size: 16px;
+
+		}
+		body{
+			min-height: 100vh;
+			background: #ADC1C5 no-repeat;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.contact-section{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.contact-info{
+			color: black;
+			max-width: 400px;
+			line-height: 65px;
+			padding-right: 40px;
+			font-size: 18px;
+		}
+		.contact-info i{
+			margin-right: 20px;
+			font-size: 20px;
+		}
+		.contact-form h2{
+			color: #EDEBE8;
+			text-align: center;
+			font-size: 50px;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+
+		}
+		.contact-form .text-box{
+			background: #EDEBE8;
+			color: black;
+			border: none;
+			width: calc(50% - 10px);
+			height: 50px;
+			padding: 12px;
+			font-size: 15px;
+			border-radius: 5px;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			margin-bottom: 20px;
+			opacity: 0.9;
+		}
+		.contact-form textarea{
+			background-color: #EDEBE8;
+			color: black;
+			border: none;
+			width: 900%;
+			padding: 12px;
+			font-size: 15px;
+			min-height: 200px;
+			max-width: 400px;
+			resize: vertical;
+			border-radius: 5px;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			margin-bottom: 20px;
+			opacity: 0.9;
+		}
+		.contact-form .send-btn{
+			float: right;
+			background-color:  #E3C5B2;
+			color: black;
+			border: none;
+			width: 140px;
+			height: 60px;
+			font-size: 15px;
+			font-weight: 600;
+			text-decoration: uppercase;
+			letter-spacing: 2px ;
+			border-radius: 5px;
+			transition: 0.3s;
+			transition-property: background;
+		}
+		.contact-form .send-btn:hover{
+			background: #fff;
+
+		}
+		footer{
+			background:black ;
+		}
+		.inner-footer{
+			margin: 0;
+			padding: 0;
+			background: black;
+
+		}
+		.social-links{
+			display: flex;
+		}
+		.social-links ul{
+
+			display: flex;
+			width: 300px;
+			height: 30px;
+			margin: auto;
+		}
+		.social-items{
+			list-style: none;
+		}
+		.social-items a{
+			padding: 10px;
+			font-size: 45px;
+			color: #6AA9A2;
+
+		}
+		.quick-links{
+			display: flex;
+			width: 560px;
+			height: 70px;
+			margin: auto;
+		}
+		.quick-links ul {
+			display: flex;
+
+		}
+		.quik-items{
+			list-style: none;
+		}
+		.quick-items a{
+			text-decoration: none;
+			padding: 0px 19px;
+			font-size: 15px;
+			color: #6AA9A2;
+
+		}
+		.outer-footer{
+			padding: 10px;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			background-color: #3f3f3f;
+
+		}
+		.social-items a:hover{
+			color: #fff;
+		}
+		.quick-items a:hover{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- nav start -->
+	<div class="nav">
+	 <nav >
+        <p class="logo">Kamila</p>
+		<ul>
+			<li><a href="">About Me</a></li>
+			<li><a href="">Project and Work Simple</a></li>
+			<li><a href="">Service</a></li>
+			<li><a href="">Contact</a></li>
+
+		</ul>
+
+	</nav>
+	 
+	<!-- nav end -->
+	      <!-- start about -->
+	      <section class="about">
+	      	<div class="main">
+	      		<img src="mypic.jpg" alt="img">
+	      		<div class="abouttext">
+	      			<h1 class="oo">Hello,I'm Kamila Jeneifer.</h1>
+	      		</br>
+		            <p>I'm working an a professional,visually sophisticated and technologically Proficient,reponsive and multi-Functional React Template lmroz. </p>
+		        </br></br>
+		            <button type="button">Let's Talk</button>	
+	      		</div>	      		
+	      	</div>
+	      	
+	      </section>
+	      
+	      <div class="all">
+	     <div class="worksimple1">
+	     </br></br>
+	      	<h1 class="h1">+3 Project That I made</h1> 
+	     </div>
+	 </br></br></br>
+	     <div class="worksimple2">
+
+	      <div class="gallery">
+		  <img src="1.jpg" alt="img">
+		  <div class="desc"></div>
+		  </div>
+		  <div class="gallery">
+		  <img src="4.jpg" alt="img">
+		  <div class="desc"></div>
+		  </div>
+		  <div class="gallery">
+		  <img src="2.jpg" alt="img">
+		  <div class="desc"></div>
+		  </div>
+		  </div>
+
+		  </div>
+		  <!-- end about -->
+		<!--   service section start -->
+		 <div class="service">
+		 	<div class="title">
+		 		<h1  class="hh">Our Services</h1>
+		 	</div>
+		 	<div class="box">
+		 		<div class="card">
+		 	    <i class="fa fa-navicon"></i>
+		 		
+		 		<h5>Web Development</h5>
+		 		<div class="pra">
+		 			<p>Every website abhould be built with two primary goals:Firstly,it needs  to work across all devices.seconly,it needs to be fast as possible</p>
+		 			
+		 		</div>
+		 			
+		 		</div>
+		 		<div class="box">
+		 		<div class="card">
+		 		<i class="fa fa-bell-o"></i>
+		 		<h5>Web Development</h5>
+		 		<div class="pra">
+		 			<p>Every website abhould be built with two primary goals:Firstly,it needs  to work across all devices.seconly,it needs to be fast as possible</p>
+		 			
+		 		</div>
+		 			
+		 		</div>
+		 		<div class="box">
+		 		<div class="card">
+		 			<i class="fa fa-user-o"></i>
+		 		
+		 		<h5>Web Development</h5>
+		 		<div class="pra">
+		 			<p>Every website abhould be built with two primary goals:Firstly,it needs  to work across all devices.seconly,it needs to be fast as possible</p>	
+		 		</div>		 			
+		 		</div>
+		    </div>
+		 </div>
+	
+   </div>
+
+         <!-- start contact -->
+        <section>
+        	<div class="contact-section">
+        		<div class="contact-info">
+        			<div><i class="	fa fa-envelope-o"></i>kamila@gmail.com</div>
+        			<div><i class="fa fa-phone">    +95 928989774</i></div>	
+        		</div>
+        		<div class="contact-form">
+        		</br></br>
+        			<h2>Contact</h2>
+        			<form class="contant" method="post">
+        				<input type="text" name="name" class="text-box" placeholder="your name" required>
+        				<input type="email" name="email" class="text-box" placeholder="your email" required>
+        			 </br></br> 
+        				<textarea name="message" row="5" placeholder="message" required></textarea>
+        				<input type="submit" name="submit" class="send-btn" value="Send">
+        				
+        			</form>
+        		</div>
+        		
+        	</div>    
+		</section>
+		  <!-- end contact -->
+		        <!-- start footer -->
+		    </br></br>
+		        <footer class="footer">
+		        	<div class="inner-footer">
+		        		<div class="social-links">
+		        			<ul>
+		        				<li class="social-items"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+		        				<li class="social-items"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+		        				<li class="social-items"><a href="#"><i class='fa fa-pinterest-square'></i></a></li>
+		        				<li class="social-items"><a href="#"><i class="fa fa-instagram"></i></a></li>
+		        				<li class="social-items"><a href="#"></a></li>
+		        			</ul>	        			
+		        		</div>	
+		        	</div>
+		        </br></br>
+		        	<div class="quick-links">
+		        		<ul>
+		        			<li class="quick-items"><a href="#">About me</a></li>
+		        			<li class="quick-items"><a href="#">Project and Work Simple</a></li>
+		        			<li class="quick-items"><a href="#">Service </a></li>
+		        			<li class="quick-items"><a href="#">Contact </a></li>
+		        		</ul>	
+		        	</div>
+		        	<div class="outer-footer">
+		        		Copyright &copyl; Web Coding Pro. All Rights Reserved
+		        	</div>
+		        	
+		        </footer>
+		    
+		        <!-- end footer -->		 
+</body>
+</html>
+
+
+
+      
